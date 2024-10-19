@@ -1,0 +1,49 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Unlock Sequence 3
+#
+# This sequence attempts to access service menus using the combination:
+# MUTE > 1 > 8 > 2 > FUNCTION
+#
+# Theory: This is an adaptation of a common sequence used to access service
+# menus on Samsung TVs. The specific number combination (1-8-2) is
+# thought to be a code recognized by the TV's firmware.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch for any changes on the screen, such as a new menu appearing
+# 4. If nothing happens, try running the sequence 2-3 times
+#
+# Note: 'FUNCTION' is used in place of 'POWER' based on available codes
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: 1
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 83 7C 00 00
+#
+name: 8
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 8A 75 00 00
+#
+name: 2
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 82 7D 00 00
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00

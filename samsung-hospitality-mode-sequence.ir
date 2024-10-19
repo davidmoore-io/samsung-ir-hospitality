@@ -1,0 +1,49 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Hospitality Mode Access Sequence
+#
+# This sequence attempts to access the hospitality mode on Samsung TVs
+# using the combination: MUTE > 1 > 1 > 9 > SELECT
+#
+# Theory: This is one of the most common sequences for accessing hospitality mode
+# on Samsung TVs. The specific button combination is thought to trigger
+# a hidden menu or mode.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch for any changes on the screen, such as a new menu appearing
+# 4. If nothing happens, try running the sequence 2-3 times
+#
+# Note: Some TVs might require the sequence to be input quickly
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: 1
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 83 7C 00 00
+#
+name: 1
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 83 7C 00 00
+#
+name: 9
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 89 76 00 00
+#
+name: SELECT
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 95 6A 00 00

@@ -1,0 +1,30 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Factory Code Sequence
+#
+# This sequence attempts to trigger a factory reset or access a hidden menu
+# using the combination: FUNCTION > SELECT
+#
+# Theory: This simple sequence might be a confirmation for entering a special mode,
+# possibly related to factory settings or resets.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch for any on-screen prompts or menu changes
+# 4. Be prepared to act quickly if a menu appears
+#
+# Caution: This sequence might trigger a factory reset. Use with care.
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00
+#
+name: SELECT
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 95 6A 00 00

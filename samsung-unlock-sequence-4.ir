@@ -1,0 +1,44 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Unlock Sequence 4
+#
+# This sequence attempts to access hidden menus or modes using the combination:
+# SLEEP > HELP > MUTE > FUNCTION
+#
+# Theory: This is a non-standard sequence that combines buttons often used
+# in service menu access. It's an experimental approach that might
+# trigger unexpected responses from the TV's firmware.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch closely for any changes on the screen, even subtle ones
+# 4. If nothing happens, try running the sequence 2-3 times
+#
+# Note: This sequence is more experimental than the others. It might
+#       trigger different responses on different TV models.
+#
+name: SLEEP
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: A5 5A 00 00
+#
+name: HELP
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: A3 5C 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00

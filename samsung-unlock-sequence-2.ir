@@ -1,0 +1,42 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Unlock Sequence 2
+#
+# This sequence attempts to access hidden menus using the combination:
+# INFO > MENU > MUTE > FUNCTION
+#
+# Theory: This sequence is typically used when the TV is off or in standby mode.
+# It's designed to trigger a hidden menu or diagnostic mode.
+#
+# Instructions:
+# 1. Start with the TV turned off or in standby mode
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch for the TV to turn on or display a special menu
+# 4. If nothing happens, try running the sequence 2-3 times
+#
+# Note: 'FUNCTION' is used in place of 'POWER' based on available codes
+#
+name: INFO
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: A4 5B 00 00
+#
+name: MENU
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 90 6F 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00

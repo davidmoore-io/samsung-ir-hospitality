@@ -1,0 +1,49 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Combined Special Sequence
+#
+# This sequence combines several special buttons in a unique order:
+# MENU > INFO > MUTE > FUNCTION > SELECT
+#
+# Theory: This experimental sequence combines buttons often used in
+# accessing service menus or hidden modes. It might trigger unexpected
+# responses from the TV's firmware.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch closely for any changes on the TV screen, even subtle ones
+# 4. If a menu appears briefly, you may need to act quickly
+#
+# Note: This is not a standard sequence, but combines commonly used buttons
+#
+name: MENU
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 90 6F 00 00
+#
+name: INFO
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: A4 5B 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00
+#
+name: SELECT
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 95 6A 00 00

@@ -1,0 +1,42 @@
+Filetype: IR signals file
+Version: 1
+#
+# Samsung TV HG65NT678U Service Menu Access Sequence
+#
+# This sequence attempts to access the service menu on Samsung TVs
+# using the combination: INFO > MENU > MUTE > FUNCTION
+#
+# Theory: This combination of buttons is commonly used to trigger
+# diagnostic modes or service menus on Samsung TVs.
+#
+# Instructions:
+# 1. Ensure the TV is powered on
+# 2. Point your Flipper Zero at the TV and run this sequence
+# 3. Watch for any changes on the screen, such as a new menu appearing
+# 4. If nothing happens, try running the sequence 2-3 times
+#
+# Note: 'FUNCTION' is used in place of 'POWER' based on available codes
+#
+name: INFO
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: A4 5B 00 00
+#
+name: MENU
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 90 6F 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 97 68 00 00
+#
+name: FUNCTION
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 92 6D 00 00
