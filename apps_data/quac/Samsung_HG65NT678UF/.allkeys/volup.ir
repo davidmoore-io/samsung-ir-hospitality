@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Volup
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 8F 70 00 00

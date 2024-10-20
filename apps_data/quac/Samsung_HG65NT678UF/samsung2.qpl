@@ -1,0 +1,11 @@
+# Samsung Hospitality Mode 2
+#
+# Utility files are in a hidden directory to prevent display clutter,
+# make sure to copy the .allkeys folder as well.
+#
+# Runs command INFO-MENU-MUTE-FUNCTION
+
+.allkeys/info.ir
+.allkeys/menu.ir
+.allkeys/mute.ir
+.allkeys/function.ir
