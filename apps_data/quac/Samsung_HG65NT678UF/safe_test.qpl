@@ -1,0 +1,22 @@
+# Safely test script.
+#
+# Paths can be relative or explicit to organise.
+#
+# Utility files are in a hidden directory to prevent display clutter,
+# make sure to copy the .allkeys folder as well.
+
+.allkeys/poweron_raw.ir
+
+pause 20000
+
+.allkeys/volup.ir
+.allkeys/volup.ir
+.allkeys/volup.ir
+pause 500
+.allkeys/volup.ir
+
+.allkeys/voldn.ir
+.allkeys/voldn.ir
+.allkeys/voldn.ir
+pause 500
+.allkeys/voldn.ir

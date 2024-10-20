@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+#
+name: Voldn
+type: parsed
+protocol: NECext
+address: 85 7C 00 00
+command: 93 6C 00 00
